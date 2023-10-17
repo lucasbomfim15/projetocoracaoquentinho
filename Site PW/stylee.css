@@ -1,0 +1,217 @@
+h* {
+  margin: 0;
+  padding: 0;
+}
+
+a {
+  color: #fff;
+  text-decoration: none;
+  transition: 0.3s;
+}
+
+a:hover {
+  opacity: 0.7;
+  
+}
+
+.logo {
+  font-size: 120%;
+  text-transform: uppercase;
+ letter-spacing: 3%; 
+  z-index: 5; 
+
+}
+
+nav {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  font-family: system-ui, -apple-system, Helvetica, Arial, sans-serif;
+  background: #23232e;
+  height: 70px;
+  
+   
+}
+
+
+.nav-list {
+  list-style: none;
+  display: flex;
+  z-index: 5; 
+}
+
+
+.nav-list li {
+  letter-spacing: 3%;
+  margin-left: 5%;
+}
+.ima-fluid{
+  width: 100%;
+}
+body{
+  text-align: center;
+
+
+
+
+}
+/* =============texto=================  */
+
+.texto {
+  position: absolute;
+  top: 50%; /* Aproximadamente no meio vertical */
+  left: 50%; /* No meio horizontal */
+  transform: translate(-50%, -50%); /* Para centralizar o elemento */
+  color: #fff;
+  font-family: "Arial", sans-serif;
+   z-index: 2; /* Valor de z-index maior que outros elementos */
+  font-size: max(15px,2vw);
+  word-wrap: break-word;
+}
+/* =============botao=================  */
+.container {
+    text-align: center;
+    height: 10vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.botao-saiba-mais {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #0077cc;
+    color: #fff;
+    text-decoration: none;
+    font-size: 18px;
+    border-radius: 5px;
+    transition: background-color 0.3s;
+
+}
+
+.botao-saiba-mais:hover {
+    background-color: #0055aa;
+}
+/* =============botao=================  */
+.imagem-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content:space-between;;
+
+
+
+}
+
+.imagem-container img {
+    width: auto; /* Ajuste a largura das imagens conforme necessário */
+    margin: 3px; /* Espaçamento entre as imagens */
+}
+
+@media screen and (max-width: 600px) {
+    .imagem-container {
+        flex-direction: column;
+      
+    }
+
+    .imagem-container img {
+        width: 100%; /* Para que as imagens ocupem a largura total da tela no celular */
+      
+    }
+}
+/* =============imagemgrandeis=================  */
+
+.imagem-link {
+    
+    display: inline-block;
+    margin: 10px;
+    transition: transform 0.3s; /* Adiciona uma transição para suavizar a animação */
+}
+
+.imagem-link:hover {
+    transform: scale(1.1); /* Faz a imagem 10% maior no efeito hover */
+}
+
+/* Define o tamanho padrão das imagens */
+.imagem {
+  
+    width: 200px;
+    height: 300px;
+}
+/* ==============imagem=fim=================  */
+.imagemfim{
+ /* Defina um tamanho máximo para o contêiner, se necessário */
+  
+  max-width:auto;
+  height: auto;
+  
+}
+.imagemfim {
+    max-width:auto; /* Faça a imagem ter no máximo a largura do contêiner pai */
+    height: 80%; /* Mantenha a proporção da imagem */
+  
+}
+/* ==============imagem=fim=================  */
+
+.rodape img {
+  /* Estilos para a imagem no rodapé */
+
+  width: 100%;
+  display: block;
+}
+
+.rodape p {
+  /* Estilos para a frase sobreposta à imagem */
+  position: absolute;
+  bottom: 30%;
+  left: 50%;
+  transform: translateX(-50%);
+  
+  background-color: rgba(0, 0, 0, 0.5);
+  color: #fff;
+  padding: 10%;
+}
+/* ==============imagem=petro=================  */
+
+.imagem-com-texto::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background:linear-gradient(to bottom, rgba(0, 0, 0, 0.8), transparent);
+  z-index: 1;
+  
+}
+
+/* ==============imagem=fim=================  */
+
+.retangulo-cinza {
+  top:-1cm ;
+  position: absolute;
+  width: 100%; /* Largura desejada */
+  height: 50px; /* Altura desejada */
+  background-color: black; /* Cor de fundo cinza */
+  border: 2px solid black; /* Borda preta de 2px de largura */
+  margin-bottom: -30px; /* Ajuste a margem inferior para reduzir o espaço */
+  z-index: 3; /* Valor de z-index maior para o retângulo cinza */
+}
+.retangulll-cinza {
+  
+ 
+  width: 100%; /* Largura desejada */
+  height: 50px; /* Altura desejada */
+  background-color:  black; /* Cor de fundo cinza */
+  border: 2px solid black; /* Borda preta de 2px de largura */
+  margin-bottom: 10px; /* Ajuste a margem inferior para reduzir o espaço */
+  
+}
+
+/* ==============texto2m=================  */
+.texto2{
+   font-family:"Snell Roundhand", cursive;
+  color:  #0055aa;
+  font-size: max(15px,2vw);
+}
+
